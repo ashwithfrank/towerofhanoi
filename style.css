@@ -1,18 +1,20 @@
 body {
-    background-color: #cfe8cf;
+    height: 100vh;
+    margin: 0%;
+    background-color: rgb(185, 136, 0);
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 40px;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
 }
 
 h1 {
-    color: #4caf50;
+    width: 100%;
+    color: white;
     font-size: 36px;
 }
 
 h3 {
+    color: white;
     margin-bottom: 30px;
 }
 
@@ -21,33 +23,46 @@ input {
     padding: 12px;
     font-size: 20px;
     text-align: center;
-    border-radius: 15px;
-    border: none;
+    border-radius: 10px;
     outline: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.35);
 }
 
 .result {
-    margin-top: 25px;
-    background: #eaf6ea;
+    color: white;
+    margin: 25px auto;
     padding: 20px;
     border-radius: 20px;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50vh;
     box-sizing: border-box;
     overflow-x: hidden;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #moves {
     font-size: 22px;
     font-weight: bold;
-    color: #4caf50;
 }
 
 #steps {
     font-size: 18px;
     line-height: 1.5;
-    color: #4caf50;
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
